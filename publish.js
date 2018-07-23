@@ -304,18 +304,18 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
             } else if ( !hasOwnProp.call(itemsSeen, item.longname) ) {
                 itemsNav += '<li>' + linktoFn(item.longname, item.name.replace(/^module:/, ''));
 
-                if (docdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
+                //if (docdash.static && members.find(function (m) { return m.scope === 'static'; } )) {
                     itemsNav += "<ul class='members'>";
 
                     members.forEach(function (member) {
-                        if (!member.scope === 'static') return;
+                        //if (!member.scope === 'static') return;
                         itemsNav += "<li data-type='member'>";
                         itemsNav += linkto(member.longname, member.name);
                         itemsNav += "</li>";
                     });
 
                     itemsNav += "</ul>";
-                }
+                //}
 
                 if (methods.length) {
                     itemsNav += "<ul class='methods'>";
