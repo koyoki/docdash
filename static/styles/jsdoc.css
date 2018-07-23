@@ -89,8 +89,8 @@ h4.name {
   box-shadow: 0 .25em .5em #d3d3d3;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
-  margin: 1.5em 0 0.5em;
-  padding: .75em 0 .75em 10px;
+  margin: 2.5em 0 0.5em;
+  padding: .5em 0 .5em 10px;
 }
 
 h4.name a {
@@ -425,7 +425,7 @@ footer {
    margin: 0px;
    text-align: left;
    vertical-align: top;
-   padding: 10px;
+   padding: 5px 10px;
    display: table-cell;
 }
 
@@ -451,6 +451,14 @@ footer {
 .params td.description > p:last-child, .props td.description > p:last-child {
    margin-bottom: 0;
    padding-bottom: 0;
+}
+
+.params td.name, .params td.type {
+    width: 20%;
+}
+
+.params td.name.last {
+    width: 100%;
 }
 
 span.param-type, .params td .param-type, .param-type dd {
